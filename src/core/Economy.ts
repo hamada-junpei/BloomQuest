@@ -5,7 +5,7 @@ export interface SeedPoolCfg  { id:string; hint:string; weights:Record<string,nu
 export interface GachaCfg     { rates:Record<string,number>; softEpicStart:number; hardLegendary:number; tenShotRareGuarantee:boolean; }
 
 import type { State } from "../State";
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 
 export function cost(base:number, r:number, n:number):number {
   return Math.floor(base * Math.pow(r, n));

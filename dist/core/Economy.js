@@ -1,4 +1,4 @@
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 export function cost(base, r, n) {
     return Math.floor(base * Math.pow(r, n));
 }

@@ -1,4 +1,4 @@
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 function drawRarity(state, cfg) {
     const pulls = state.pity.pulls + 1;
     if (pulls >= cfg.hardLegendary) {

@@ -1,5 +1,5 @@
 import { saveState } from "../State";
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 export class SeedsView {
     constructor(state) {
         this.state = state;

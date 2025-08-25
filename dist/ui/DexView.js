@@ -1,4 +1,4 @@
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 export class DexView {
     constructor(state) {
         this.state = state;

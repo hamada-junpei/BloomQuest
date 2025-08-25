@@ -1,5 +1,5 @@
 import { State, saveState } from "../State";
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 import { rollGacha } from "../core/Gacha";
 
 export class RelicsView {
