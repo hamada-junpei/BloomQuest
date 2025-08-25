@@ -1,0 +1,31 @@
+{
+  "generators": [
+    {"id":"sprinkler","name":"スプリンクラー","baseCost":50,"r":1.15,"p0":0.5,"alpha":1.08},
+    {"id":"growlight","name":"育成灯","baseCost":250,"r":1.16,"p0":3,"alpha":1.09}
+  ],
+  "plants": [
+    {"id":"sprout","name":"ミニスプラウト","biome":"temperate","stages":[100,600,2500,12000,60000]},
+    {"id":"cactusling","name":"カクティ","biome":"desert","stages":[500,2500,15000,80000,400000]},
+    {"id":"waterfern","name":"ミズシダ","biome":"wetland","stages":[400,2000,12000,70000,350000]}
+  ],
+  "relics": [
+    {"id":"ancient_wateringcan","name":"古の如雨露","rarity":"rare","effects":[{"type":"click_mult","value":0.25}]},
+    {"id":"amber_pollen","name":"琥珀の花粉","rarity":"epic","effects":[{"type":"offline_cap_mult","value":0.2}]},
+    {"id":"solar_lattice","name":"ソーラー格子","rarity":"legendary","effects":[{"type":"day_bonus_mult","value":0.3}]},
+    {"id":"mist_bell","name":"霧の鈴","rarity":"rare","effects":[{"type":"autogen_mult","value":0.15}]}
+  ],
+  "seedPools": [
+    {"id":"temperate_basic","hint":"温帯","weights":{"common":70,"rare":25,"epic":4,"legendary":1},"candidates":["sprout","waterfern"]},
+    {"id":"desert_basic","hint":"砂漠","weights":{"common":70,"rare":25,"epic":4,"legendary":1},"candidates":["cactusling"]}
+  ],
+  "gacha": {
+    "rates": {"common":0.6,"rare":0.3,"epic":0.09,"legendary":0.01},
+    "softEpicStart": 40,
+    "hardLegendary": 120,
+    "tenShotRareGuarantee": true
+  },
+  "traits": [
+    {"id":"mut_bonus","name":"突然変異","effects":[{"type":"click_mult","value":0.1}]}
+  ],
+  "mutation": {"baseRate":0.05,"pity":10}
+}
