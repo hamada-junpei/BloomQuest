@@ -1,0 +1,6 @@
+body { font-family: sans-serif; }
+nav { margin-bottom: 10px; }
+#view { padding: 10px; }
+.seed { border: 1px solid #ccc; padding: 4px; margin: 4px; }
+.relic-option { border: 1px solid #999; margin: 4px; padding: 4px; cursor: pointer; }
+.variant { color: red; font-weight:bold; }
