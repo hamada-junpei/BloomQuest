@@ -1,5 +1,5 @@
 import { loadState, State, saveState, SeedState } from "./State";
-import config from "../content/config.json";
+import config from "../content/config.json" assert { type: "json" };
 import { autogenPerSec } from "./core/Economy";
 import { HomeView } from "./ui/HomeView";
 import { SeedsView } from "./ui/SeedsView";

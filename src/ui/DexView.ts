@@ -1,5 +1,5 @@
 import { State } from "../State";
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 
 export class DexView {
   el:HTMLElement;

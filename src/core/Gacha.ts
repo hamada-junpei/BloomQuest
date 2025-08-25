@@ -1,4 +1,4 @@
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 import { GachaCfg, RelicCfg } from "./Economy";
 import type { State } from "../State";
 

@@ -1,5 +1,5 @@
 import { saveState } from "../State";
-import config from "../../content/config.json";
+import config from "../../content/config.json" assert { type: "json" };
 import { clickAmount, cost, autogenPerSec } from "../core/Economy";
 export class HomeView {
     constructor(state) {
